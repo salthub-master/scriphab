@@ -7,7 +7,7 @@
 	The Output function can't be saved, it's set to 'warn' by default
 ]]
 
-local Output = print --// Function used to output remote calls (Change to rconsoleprint to use Synapse's console)
+local Output = rconsoleinfo --// Function used to output remote calls (Change to rconsoleprint to use Synapse's console)
 local CustomIgnoreFunction = function(Remote, Method, Arguments) --// If this returns true, then the remote call will not be displayed / recorded (You can edit this)
 	return false
 end
